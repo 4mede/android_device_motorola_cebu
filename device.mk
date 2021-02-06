@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-derp
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -70,14 +70,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Signing
-$(call inherit-product, vendor/cr/signing/keys/keys.mk)
+$(call inherit-product, vendor/derp/signing/keys/common.mk)
 
 # Prebuilts
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-
-# GApps
-$(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
->>>>>>> parent of 55b2758 (cebu: set up RemovePackages)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
