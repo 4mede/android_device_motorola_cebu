@@ -27,6 +27,10 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.bengal
 
+# Keylayouts
+PRODUCT_PACKAGES += \
+    gpio-keys.kl
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
