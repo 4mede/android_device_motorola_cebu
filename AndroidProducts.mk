@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_cebu.mk
+    $(LOCAL_DIR)/aosp_cebu.mk

@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pixelage
+    $(LOCAL_PATH)/overlay-custom
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -74,6 +74,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+# Signing
+$(call inherit-product, vendor/pixelos-priv/config/common.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
