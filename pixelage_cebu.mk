@@ -13,6 +13,10 @@ $(call inherit-product, device/motorola/cebu/device.mk)
 # Inherit some common Pixelage stuff.
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 -include vendor/pixelage-priv/keys/keys.mk
+
+# Inherit from ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Pixelage
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
