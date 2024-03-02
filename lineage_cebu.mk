@@ -12,6 +12,8 @@ $(call inherit-product, device/motorola/cebu/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_cebu
