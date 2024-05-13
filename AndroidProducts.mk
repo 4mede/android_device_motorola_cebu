@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_borneo.mk
+    $(LOCAL_DIR)/arrow_cebu.mk
