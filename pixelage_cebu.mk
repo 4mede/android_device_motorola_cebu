@@ -10,8 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/cebu/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixelage stuff.
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+-include vendor/pixelage-priv/keys/keys.mk
+# Pixelage
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_cebu
