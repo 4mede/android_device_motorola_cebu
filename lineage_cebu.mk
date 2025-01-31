@@ -12,6 +12,7 @@ $(call inherit-product, device/motorola/cebu/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
@@ -28,3 +29,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="cebu_retail-user 11 RZCS31.Q2-57-12-14 3d8395 release-keys" \
     BuildFingerprint=motorola/cebu_retail/cebu:11/RZCS31.Q2-57-12-14/3d8395:user/release-keys \
     DeviceProduct=cebu_retail
+
+# Lineage Flags
+TARGET_EXCLUDES_AUDIOFX := true
