@@ -17,7 +17,6 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Device identifier. This must come after all inclusions.
-<<<<<<<< HEAD:lineage_cebu.mk
 PRODUCT_NAME := derp_cebu
 PRODUCT_DEVICE := cebu
 PRODUCT_BRAND := motorola
