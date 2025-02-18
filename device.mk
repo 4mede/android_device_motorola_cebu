@@ -75,9 +75,9 @@ $(call inherit-product, vendor/cr/signing/keys/keys.mk)
 # Prebuilts
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# RemovePackages
-PRODUCT_PACKAGES += \
-    RemovePackages \
+# GApps
+$(call inherit-product-if-exists, vendor/google/gms/gms-vendor.mk)
+>>>>>>> parent of 55b2758 (cebu: set up RemovePackages)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
