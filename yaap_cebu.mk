@@ -10,23 +10,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/cebu/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
-
-# Pixelage
-PIXELAGE_BUILDTYPE := UNOFFICIAL
-PIXELAGE_MAINTAINER := b
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_cebu
+PRODUCT_NAME := yaap_cebu
 PRODUCT_DEVICE := cebu
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9) power

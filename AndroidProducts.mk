@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cebu.mk
+    $(LOCAL_DIR)/yaap_cebu.mk
