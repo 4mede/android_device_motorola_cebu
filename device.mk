@@ -4,7 +4,7 @@
 #
 
 # Inherit from sm6225-common
-$(call inherit-product, device/motorola/sm6225-common/bengal.mk)
+$(call inherit-product, device/motorola/sm6225-common/common.mk)
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -38,7 +38,7 @@ $(call inherit-product, vendor/motorola/MotCamera3/motcamera3.mk)
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.bengal
+    android.hardware.light-service.lineage
 
 # NFC
 PRODUCT_PACKAGES += \
