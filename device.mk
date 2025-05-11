@@ -30,18 +30,13 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-custom
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
