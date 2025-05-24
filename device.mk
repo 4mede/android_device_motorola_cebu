@@ -23,10 +23,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.bengal
-
 # Keylayouts
 PRODUCT_PACKAGES += \
     gpio-keys.kl
@@ -40,8 +36,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
