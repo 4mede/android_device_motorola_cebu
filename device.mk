@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     WifiResDevice \
     WifiResDeviceXT2091-7 \
     WifiResDeviceXT2091-8 \
+    
+# Perf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Permissions
 PRODUCT_COPY_FILES += \
